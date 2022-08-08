@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-weight: 700;
+}
+
+:root{
+    /* THEME 1 (WHITE) */
+    --white-color-bg-main: hsl(0, 0%, 90%);
+    --white-color-bg-toggle: hsl(0, 5%, 81%);
+    --white-color-bg-screen: hsl(0, 0%, 93%);
+
+    --white-color-key-cyan: hsl(185, 42%, 37%);
+    --white-color-key-cyan-shadow: hsl(185, 58%, 25%);
+
+    --white-color-key-orange: hsl(25, 98%, 40%);
+    --white-color-key-orange-shadow: hsl(25, 99%, 27%);
+
+    --white-color-key-yellow: hsl(45, 7%, 89%);
+    --white-color-key-yellow-shadow: hsl(35, 11%, 61%);
+
+    --white-color-text-dark: hsl(60, 10%, 19%);
+    --white-color-text-white: hsl(0, 0, 100%);
+    
+    /* THEME 2 (DARK) */
+    --dark-color-bg-main: hsl(222, 26%, 31%);
+    --dark-color-bg-toggle: hsl(223, 31%, 20%);
+    --dark-color-bg-screen: hsl(224, 36%, 15%);
+
+    --dark-color-key-blue: hsl(225, 21%, 49%);
+    --dark-color-key-blue-shadow: hsl(224, 28%, 35%);
+
+    --dark-color-key-red: hsl(6, 63%, 50%);
+    --dark-color-key-red-shadow: hsl(6, 70%, 34%);
+
+    --dark-color-key-orange: hsl(30, 25%, 89%);
+    --dark-color-key-orange-shadow: hsl(28, 16%, 65%);
+
+    --dark-color-text-dark: hsl(221, 14%, 31%);
+    --dark-color-text-white: hsl(0, 0, 100%);
+
+    /* THEME 3 (VIOLET) */
+    --violet-color-bg-main: hsl(268, 75%, 9%);
+    --violet-color-bg-toggle: hsl(268, 71%, 13%);
+
+    --violet-color-key-violet: hsl(281, 89%, 26%);
+    --violet-color-key-violet-shadow: hsl(285, 91%, 52%);
+
+    --violet-color-key-cyan: hsl(176, 100%, 44%);
+    --violet-color-key-cyan-soft: hsl(177, 92%, 70%);
+
+    --violet-color-key-magenta: hsl(268, 47%, 21%);
+    --violet-color-key-magenta-shadow: hsl(290, 70%, 36%);
+
+    --violet-color-text-light: hsl(52, 100%, 62%);
+    --violet-color-text-dark: hsl(198, 20%, 13%);
+    --violet-color-text-white: hsl(0, 0, 100%);
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+}
+
+p,
+span{
+    font-size: .9rem;
+}
+
+.btn{
+    background: var(--white-color-key-yellow);
+    box-shadow: var(--white-color-key-yellow-shadow) 0px 4px 0px;
+}
+
+.btn:hover{
+    background: rgb(255, 255, 255, 10%);
+}
+
+.calc__container{
+    height: 90%;
+    min-width: 50vw;
+}
+
+.calc__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.ctrl__wrapper{
+    flex-direction: column;
+}
+
+.ctrl__num span{
+    margin-bottom: .5rem;
+}
+
+.theme__container{
+    display: flex;
+    gap: 1rem;
+}
+
+.theme__container p{
+    margin-top: 2rem;
+}
+
+.ctrl__num{
+    display: flex;
+    gap: .9rem;
+    justify-content: center;
+}
+
+.col__container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    gap: 0.5rem;
+}
+
+.col__1,
+.col__2,
+.col__3,
+.col__4{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
