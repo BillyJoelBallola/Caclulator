@@ -1,0 +1,87 @@
+@import 'general.css';
+
+.bg__main{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background: var(--dark-color-bg-main);
+    color: #fff;
+}
+
+.theme__container,
+.calc__header{
+    color: var(--dark-color-text-white);
+}
+
+.ctrl__theme{
+    display: flex;
+    justify-content: center;
+    background: var(--dark-color-bg-toggle);
+    padding: .2rem .4rem;
+    border-radius: 10px;
+    gap: .2rem;
+}
+
+.ctrl__theme .btn__theme{
+    cursor: pointer;
+    padding: .6rem;
+    border-radius: 10px;
+}
+
+.theme__active{
+    background: var(--dark-color-key-red);
+    transition: 250ms ease-in-out;
+}
+
+.calc__screen{
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    height: 13vh;
+    border-radius: 10px;
+    text-align: right;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background: var(--dark-color-bg-screen);
+}
+
+.numbers__container{
+    background-color: var(--dark-color-bg-toggle);
+    border-radius: 10px;
+    height: 60vh;
+    padding: 0 1.5rem;
+}
+
+.col__4 .result{
+    color: #fff;
+    background: var(--white-color-key-orange);
+    box-shadow: var(--white-color-key-orange-shadow) 0px 4px 0px;
+}
+
+.col__4 .delete,
+.col__3 .reset{
+    font-size: 1rem;
+    color: #fff;
+    background: var(--dark-color-key-blue);
+    box-shadow: var(--dark-color-key-blue-shadow) 0px 4px 0px;
+}
+
+.col__container button{
+    cursor: pointer;
+    color: var(--white-color-text-dark);
+    height: 3.5rem;
+    width: 4rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    transition: all 250ms ease-in-out;
+}
+
+@media screen and (min-width: 700px){     
+    .col__container button{
+        width: 8rem;
+        font-size: 1.5rem;
+        border-radius: 5px;
+        transition: all 250ms ease-in-out;
+    }
+}
